@@ -18,7 +18,7 @@ int main()
     //Defaultly the button will stretch the whole background of state to fit the widget,
     //but it's easy to make the border deformation occurred. Now we need to specified the pixels
     //of 4 borders, and these border areas will not be deformed when stretching.
-    bground.stretch_parts(4, 4, 4, 4);  //left, top, right, bottom
+    bground.stretch_parts(20, 20, 20, 20);  //left, top, right, bottom
     //Create the button
     button btn(fm, nana::rectangle(20, 20, 140, 40));
     //Set the bground object.
