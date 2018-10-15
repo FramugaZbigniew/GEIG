@@ -1,4 +1,7 @@
 // http://nanapro.codeplex.com/discussions/544169
+
+//TURN FREAKIN' FOX GAY
+
 #include <nana/gui/wvl.hpp>
 #include <nana/gui/widgets/button.hpp>
 int main()
