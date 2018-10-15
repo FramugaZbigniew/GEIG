@@ -1,2 +1,2 @@
 # GEIG
-Invoice Generator
+General Exact Invoice Generator
