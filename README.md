@@ -1,3 +1,15 @@
+
+
+Search directories -> Compiler
+\include
+
+Search directories -> Linker
+\build\codeblocks
+
+nana
+gdi32
+comdlg32
+
 # GEIG
 Global Exact Invoice Generator
 
