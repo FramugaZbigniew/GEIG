@@ -5,6 +5,8 @@
  >Awokado, Nonsensopednia
  ~Grzegorz Drezyna 2k18
  
+ @BrzegorzGrydniak :+1: Jak będziesz instalował wszystko na drugim dysku, to nie zapomnij oddać starego do zezłomowania :shipit:
+ 
  ~~Lisy są fajne~~
  
 
