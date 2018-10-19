@@ -2,4 +2,4 @@
 
 Global Exact Invoice Generator
 
-ⓒ All rights reserved.Global Exact. 2018
+2018 ⓒ <insert name here> <insert name here> <insert name here> for Global Exact. All rights reserved.
