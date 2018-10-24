@@ -14,10 +14,12 @@ class GEIGFrame: public wxFrame
 {
 public:
     GEIGFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
+    wxStaticText *GEIGTitle;
 private:
     void OnHello(wxCommandEvent& event);
     void OnExit(wxCommandEvent& event);
     void OnAbout(wxCommandEvent& event);
+    void OnSize(wxSizeEvent& event);
     wxDECLARE_EVENT_TABLE();
 };
 
@@ -30,6 +32,7 @@ wxBEGIN_EVENT_TABLE(GEIGFrame, wxFrame)
     EVT_MENU(ID_Hello,   GEIGFrame::OnHello)
     EVT_MENU(wxID_EXIT,  GEIGFrame::OnExit)
     EVT_MENU(wxID_ABOUT, GEIGFrame::OnAbout)
+    EVT_SIZE(GEIGFrame::OnSize)
 wxEND_EVENT_TABLE()
 
 wxIMPLEMENT_APP(GEIGApp);
@@ -57,6 +60,8 @@ GEIGFrame::GEIGFrame(const wxString& title, const wxPoint& pos, const wxSize& si
     SetMenuBar( menuBar );
     CreateStatusBar();
     SetStatusText( "Welcome to GEIG!" );
+    SetFont(wxFont(32, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL));
+    GEIGTitle = new wxStaticText(this, wxID_ANY, "GEIG");
 }
 
 void GEIGFrame::OnExit(wxCommandEvent& event)
@@ -73,4 +78,11 @@ void GEIGFrame::OnAbout(wxCommandEvent& event)
 void GEIGFrame::OnHello(wxCommandEvent& event)
 {
     wxLogMessage("Global Exact Invoice Generator");
+}
+
+void GEIGFrame::OnSize(wxSizeEvent& event)
+{
+    wxSize size = event.GetSize();
+    wxPoint titlePos(size.GetWidth(),size.GetHeight());
+    GEIGTitle->SetPosition(titlePos);
 }
