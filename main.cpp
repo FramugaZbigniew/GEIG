@@ -62,6 +62,7 @@ GEIGFrame::GEIGFrame(const wxString& title, const wxPoint& pos, const wxSize& si
     SetStatusText( "Welcome to GEIG!" );
     SetFont(wxFont(32, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL));
     GEIGTitle = new wxStaticText(this, wxID_ANY, "GEIG");
+    GEIGTitle->Center();
 }
 
 void GEIGFrame::OnExit(wxCommandEvent& event)
@@ -82,7 +83,5 @@ void GEIGFrame::OnHello(wxCommandEvent& event)
 
 void GEIGFrame::OnSize(wxSizeEvent& event)
 {
-    wxSize size = event.GetSize();
-    wxPoint titlePos(size.GetWidth(),size.GetHeight());
-    GEIGTitle->SetPosition(titlePos);
+    GEIGTitle->Center();
 }
