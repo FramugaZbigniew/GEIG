@@ -1,5 +1,4 @@
 #include <wx/wxprec.h>
-
 #ifndef WX_PRECOMP
     #include <wx/wx.h>
 #endif
@@ -83,5 +82,5 @@ void GEIGFrame::OnHello(wxCommandEvent& event)
 
 void GEIGFrame::OnSize(wxSizeEvent& event)
 {
-    GEIGTitle->Center();
+    GEIGTitle->Center(wxHORIZONTAL);
 }
