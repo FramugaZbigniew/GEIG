@@ -1,5 +1,5 @@
 #include "main.h"
-#include "simple.h"
+#include "GEIG.h"
 
 IMPLEMENT_APP(MyApp)
 
