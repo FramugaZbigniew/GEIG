@@ -1,12 +1,17 @@
 #include "main.h"
 #include "GEIG.h"
+#include "tab.h"
 
 IMPLEMENT_APP(MyApp)
 
 bool MyApp::OnInit()
 {
-    Simple *simple = new Simple(wxT("Simple"));
-    simple->Show(true);
+    GEIGFrame *mainFrame = new GEIGFrame(wxT("Simple"));
+    MainPanel *tabPanel = new MainPanel();
+
+    mainFrame->Show(true);
+
+
 
     return true;
 }
